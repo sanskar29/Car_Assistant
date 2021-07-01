@@ -235,7 +235,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                     @Override
                     public void onInit(int status) {
                       if (status != TextToSpeech.ERROR) {
-                        t1.setLanguage(Locale.ENGLISH);
+                        t1.setLanguage(Locale.UK);
                       }
 
                     }
@@ -249,7 +249,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
 
                       {
-                        t1.speak("Warning Be alert", TextToSpeech.QUEUE_FLUSH, null);
+                        t1.speak("Warning", TextToSpeech.QUEUE_FLUSH, null);
                       }
                     }
                   }, 100);
